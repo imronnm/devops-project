@@ -5,8 +5,8 @@ Panduan ini akan memandu kamu untuk menginstal Nginx web server di dalam virtual
 ## Persyaratan
 
 Sebelum memulai, pastikan kamu telah:
-- Menginstall Multipass (lihat [panduan instalasi Multipass](#persyaratan)).
-- Membuat virtual machine menggunakan Multipass (lihat [panduan membuat virtual machine](#membuat-virtual-machine)).
+- Menginstall Multipass (lihat [panduan instalasi Multipass](https://github.com/imronnm/devops21-dumbways-imron/blob/master/day-1/instalasi-multipass-linux.md)).
+- Membuat virtual machine menggunakan Multipass (lihat [panduan membuat virtual machine](https://github.com/imronnm/devops21-dumbways-imron/blob/master/day-1/instalasi-multipass-linux.md)).
 
 ## Langkah-langkah Instalasi
 
