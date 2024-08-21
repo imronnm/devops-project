@@ -24,7 +24,7 @@
 ![ipdynamicvsipstatic](assets/images/dynamic-vs-static-ip.png) <br>
 
 ### IP Dynamic
-![ipdynamic](assets/images/dynamic-ip.png) <br>
+![ipdynamic](assets/images/ipdynamic.png) <br>
 
 - **Pengertian**: IP ini selalu berubah tiap kali perangkat nyambung ke jaringan. Dikasihnya otomatis sama router atau ISP.
 - **Kelebihan**: Praktis, nggak perlu setting manual.
