@@ -66,7 +66,7 @@ Untuk merestart Nginx setelah perubahan konfigurasi, gunakan perintah:
     Keluar dari Virtual Machine
 Untuk keluar dari virtual machine, ketikkan:
         exit
-        ![restartnginx](assets/images/exit-vm.png) <br> 
+        
 
 Dengan mengikuti langkah-langkah di atas, kamu telah berhasil menginstal dan mengelola Nginx web server di dalam virtual machine menggunakan Multipass. Semoga panduan ini membantu!
 
