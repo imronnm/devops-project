@@ -15,7 +15,7 @@
       ![ip a(server a) ](assets/images/cek-ip-server-a(1).png) <br>
 
     - **server B** 
-      ![ip a(server b) ](assets/images/setting-ip-server-b(3).png) <br>
+      ![ip a(server b) ](assets/images/ip-b(4).png) <br>
 
 3. **Konfigurasi server b agar hanya bisa diakses server A**
    - **aktifkan ufw enable**
