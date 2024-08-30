@@ -37,9 +37,9 @@ Git bakal kasih tanda di index.html bagian mana aja yang ada konflik. Biasanya t
 >>>>>>> commit-id
 ```
 
-**Bagian atas (<<<<< HEAD) itu perubahan yang Teguh lakuin.**
-**Bagian bawah (======) itu perubahan yang Reyhan lakuin.**
-**======= adalah pemisah antara kedua perubahan.**
+- Bagian atas (<<<<< HEAD) itu perubahan yang Teguh lakuin.
+- Bagian bawah (======) itu perubahan yang Reyhan lakuin.
+- ======= adalah pemisah antara kedua perubahan.
 
 ### 3. **Gabungkan Perubahan Secara Manual**
 
