@@ -75,5 +75,5 @@ Sekarang, perubahan Teguh udah berhasil di-push, dan repository online punya ver
 
 ## Kesimpulan
 
-Konflik kayak gini sering kejadian kalau kerja bareng di project yang sama. Solusinya adalah tarik dulu perubahan terbaru, fix konfliknya, terus baru push lagi. Dengan Git, semua bisa dikelola dengan rapi, dan perubahan dari semua orang bisa digabungin dengan aman.
+Konflik kayak gini sering kejadian kalau kerja bareng di project yang sama. Solusinya adalah tarik dulu perubahan terbaru, fix konfliknya, terus baru push lagi Dengan Git.
 
