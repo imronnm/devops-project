@@ -1,6 +1,6 @@
 # Dokumentasi Command Git
 
-## 1. `git init`
+## 1. git init
 **Fungsi:** Buat mulai project baru dengan Git.
 
 Ini kayak kamu bilang ke Git, "Oke, gue mau mulai nyimpen semua perubahan di folder ini." Setelah kamu jalankan command ini, Git bakal bikin folder tersembunyi yang isinya semua data yang dibutuhin buat nge-track perubahan.
@@ -9,7 +9,7 @@ Ini kayak kamu bilang ke Git, "Oke, gue mau mulai nyimpen semua perubahan di fol
 ```bash
 git init
 ```
-## 2. `git add`
+## 2. git add
 **Fungsi:** Siapin file buat di-commit.
 
 Command ini buat nge-mark file atau perubahan yang udah kamu lakuin, supaya Git tau apa aja yang bakal di-save nanti pas kamu commit.
