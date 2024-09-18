@@ -1,9 +1,5 @@
 # Deployment Setup Documentation
-
-## Requirments
-- Appserver untuk deploying Database.
-- Gateway untuk deploying Frontend Application, Backend Application, dan Web Server.
-
+![ssh-keys](img/sshkeys.jpeg) <br>
 ## Tasks
 1. Membuat user baru untuk semua server.
 2. Mengatur agar server hanya dapat login dengan SSH-KEY tanpa menggunakan password.
