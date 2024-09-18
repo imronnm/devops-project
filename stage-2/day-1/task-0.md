@@ -13,8 +13,8 @@
 ### 1. Persiapan Server
 - Siapkan dua server: Appserver dan Gateway.
 
-### 2. Membuat User Baru di Semua Server
-- Login ke server dan buat user baru:
+### 2. Membuat User Baru di Server app dan gateway 
+- Login ke server gateway dan buat user baru:
 ```bash
   sudo adduser imronserver
 ```
@@ -23,19 +23,32 @@
 ```bash
   sudo usermod -aG sudo imronserver
 ```
-### 3. Konfigurasi Autentikasi SSH-KEY
-- Buat SSH key di lokal:
+
+- Login ke server app dan buat user baru:
 ```bash
+  sudo adduser imron
+```
+
+- Berikan hak akses sudo
+```bash
+  sudo usermod -aG sudo imron
+```
+
+### 3. Konfigurasi Autentikasi SSH-KEY
+- Buat SSH key di server apps:
+```bash
+su - imron
 ssh-keygen
 ```
 
-- Copy SSH public key ke server:
+- Copy SSH public key apps ke server:
 ```bash
 cd /.ssh
 cat id_rsa.pub
 ```
-- buka server buat folder baru dan tambahkan ssh authorized_keys untuk kuncinya
+- buka server gateway buat folder baru dan tambahkan ssh authorized_keys untuk kuncinya
 ```bash
+su - imronserver
 sudo mkdir -p /home/imronserver/.ssh
 sudo nano /home/imronserver/.ssh/authorized_keys
 ```
@@ -52,7 +65,7 @@ sudo systemctl restart ssh
 ```
 
 ### 4. Verifikasi Konfigurasi
--  buka komputer lokal konek ssh ke server:
+-  akses ke user apps lalu koneksikan ke ssh ke server gateway:
 
 ```bash
 ssh imronserver@150.127.136.6
