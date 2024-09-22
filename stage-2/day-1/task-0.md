@@ -1,5 +1,5 @@
 # Deployment Setup Documentation
-![ssh-keys](img/sshkeys.jpeg) <br>
+![ssh-keys](assets/images/imron.xyz.png) <br>
 ## Tasks
 1. Membuat user baru untuk semua server.
 2. Mengatur agar server hanya dapat login dengan SSH-KEY tanpa menggunakan password.
