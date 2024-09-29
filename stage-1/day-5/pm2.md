@@ -71,5 +71,10 @@ sudo chmod 700
 pm2 pm2-go.sh
 ```
 
+## Konfigurasi PM2 untuk Aplikasi Nodejs
+```bash
+pm2 start npm -- start
+```
+
 ## Tampilan menjalankan 2 aplikasi sekaligus
 ![tampilan-web](assets/images/pm2.png) <br>

@@ -1,6 +1,7 @@
 # Perbandingan Application Monolith & Application Microservices
 
 Penjelasan singkat mengenai perbedaan **Application Monolith** dan **Application Microservices**:
+![tampilan-aplikasi](assets/images/micro.png) <br>
 
 ## Monolith
 **Monolith** itu kayak bangunan gedung besar yang semuanya gabung jadi satu. Semua fitur aplikasi, mulai dari login, pembayaran, sampai fitur lain-lain, ada di dalam satu kode yang besar. Jadi kalau ada perubahan kecil, kita harus utak-atik semuanya.

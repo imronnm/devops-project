@@ -43,31 +43,38 @@ sudo nginx -t
 ```bash
 sudo systemctl restart nginx
 ```
+5. ##  **Instalasi PM2**
 
-5. **jalankan aplikasi dumbflix di ke dua server**
+- install pm2 di server a dan b
+
+```bash
+npm install pm2@latest -g
+```
+
+6. **jalankan aplikasi dumbflix di ke dua server**
 
 - server a :
 ```bash
 cd dumbflix 
-npm start
+pm2 start npm -- start
 ```
 - server b :
 ```bash
 cd dumbflix 
-npm start
+pm2 start npm -- start
 ```
 
-6. **edit konfigurasi di komputer lokal agar bisa diakses browser**
+7. **edit konfigurasi di komputer lokal agar bisa diakses browser**
 - tambahkan nama ip dan domainnya agar bisa diakses di browser lokal kita
 ```bash
 sudo nano /etc/hosts
 192.168.60.1    dumbflix.xyz
 ```
 
-7. **test load balance**
+8. **test load balance**
 - sekarang coba matikan salah satu aplikasi
 ```bash
-ctrl + c
+pm2 stop npm 
 ```
 
 8. **refresh aplikasi**
