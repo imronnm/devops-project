@@ -1,0 +1,4 @@
+# roles/frontend/tasks/docker-compose.yml
+- name: Run Docker Compose up with build
+  ansible.builtin.shell: |
+    cd /home/ansible/frontend && docker compose up -d --build

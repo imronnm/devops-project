@@ -1,0 +1,11 @@
+
+    # Download and install Grafana
+    - name: Download and install Grafana
+      community.docker.docker_container:
+        name: grafana
+        image: grafana/grafana
+        ports:
+          - 3001:3000
+        volumes:
+          - grafana:/var/lib/grafana
+        restart_policy: unless-stopped

@@ -1,0 +1,15 @@
+- name: Include reverse_proxy tasks for Debian
+  include_tasks: reverse_debian.yml
+  when: ansible_distribution == "Debian"
+
+- name: Include reverse_proxy tasks for Ubuntu
+  include_tasks: reverse_ubuntu.yml
+  when: ansible_distribution == "Ubuntu"
+
+- name: Include reverse_proxy tasks for gateway
+  include_tasks: gateway.yml
+  when: ansible_distribution == "gateway"
+
+- name: Include reverse_proxy tasks for app_server
+  include_tasks: app_server.yml
+  when: ansible_distribution == "app_server.yml"

@@ -1,0 +1,13 @@
+- hosts: all
+  become: true
+  remote_user: ansible
+  vars:
+    vault_password: "$1$t0PZvfjk$NGrn2huLLEgIpbS/l3Vju0"
+
+  roles:
+    - create_user
+    - docker
+    - frontend
+    - monitoring
+    - nginx
+    - reverse_proxy

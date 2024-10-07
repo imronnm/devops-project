@@ -1,0 +1,8 @@
+    # Download and install Node Exporter
+    - name: Download and install node_exporter
+      community.docker.docker_container:
+        name: node_exporter
+        image: prom/node-exporter
+        ports:
+          - 9100:9100
+        restart_policy: unless-stopped

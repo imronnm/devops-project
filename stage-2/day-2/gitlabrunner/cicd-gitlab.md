@@ -98,3 +98,7 @@ Dalam konfigurasi CI/CD .gitlab-ci.yml ini, kita telah mengimplementasikan:
     wgetspider: Alat ini digunakan untuk menguji domain aplikasi kita dengan melakukan pemeriksaan terhadap semua link di dalam aplikasi. Jika ada link yang mengarah ke halaman 404 (tidak ditemukan), maka akan memberikan peringatan.
     Notifikasi ke Discord: Setelah proses deployment selesai, notifikasi akan dikirim ke saluran Discord.
     Auto Trigger: Pipeline akan otomatis berjalan setiap kali ada perubahan pada kode di repository SCM.
+
+
+  git config --global user.email "iyaron08@gmail.com"
+  git config --global user.name "imronnm"

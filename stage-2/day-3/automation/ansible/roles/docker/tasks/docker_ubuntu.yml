@@ -1,0 +1,43 @@
+      - name: "Update apt package cache"
+        apt:
+          update_cache: yes
+        
+      - name: "Upgrade all packages"
+        apt:
+          upgrade: yes
+
+      - name: "Install dependencies"
+        package:
+          name:
+            - ca-certificates
+            - curl
+
+      - name: "Add Docker's official GPG key"
+        apt_key:
+          url: https://download.docker.com/linux/ubuntu/gpg
+
+      - name: "Add Docker repository"
+        apt_repository:
+          repo: "deb [arch=amd64] https://download.docker.com/linux/ubuntu jammy stable"
+          state: present
+
+      - name: "Update apt package cache"
+        apt:
+          update_cache: yes
+
+      - name: "Install Docker Engine"
+        package:
+          name: docker-ce
+          state: present
+
+      - name: "Start Docker service"
+        service:
+          name: docker
+          state: started
+          enabled: yes
+
+      - name: "Add new user to docker group"
+        user:
+          name: "ansible"
+          groups: docker
+          append: yes

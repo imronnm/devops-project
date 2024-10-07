@@ -1,0 +1,43 @@
+    # Membuat direktori untuk konfigurasi cAdvisor
+    - name: Create cAdvisor config directory
+      file:
+        path: /etc/cadvisor
+        state: directory
+        mode: '0755'
+
+    # Menyalin konfigurasi cAdvisor jika diperlukan
+    # Kamu dapat menyalin file konfigurasi dari sumber lain atau menggunakan template
+    # Menyalin konfigurasi cAdvisor
+    - name: Create cAdvisor configuration file
+      copy:
+        dest: /etc/cadvisor/cadvisor.yml
+        content: |
+          # cAdvisor Configuration
+          {
+            "metrics_collection_interval": "10s", # Interval pengambilan metrik
+            "log_dir": "/var/log/cadvisor", # Direktori untuk menyimpan log
+            "healthz_port": 8081, # Port untuk health check
+            "enable_cpu": true, # Aktifkan pengukuran CPU
+            "enable_memory": true, # Aktifkan pengukuran Memori
+            "enable_disk_usage": true, # Aktifkan pengukuran penyimpanan
+            "enable_network": true # Aktifkan pengukuran jaringan
+          }
+
+
+    # Menjalankan cAdvisor sebagai kontainer
+    - name: Run cAdvisor container
+      community.docker.docker_container:
+        name: cadvisor
+        image: gcr.io/cadvisor/cadvisor:latest 
+        ports:
+          - 8080:8080
+        volumes:
+          - /:/rootfs:ro
+          - /var/run:/var/run:ro
+          - /sys:/sys:ro
+          - /var/lib/docker/:/var/lib/docker:ro
+          - /dev/disk/:/dev/disk:ro
+        restart_policy: unless-stopped
+        privileged: true
+        devices:
+          - /dev/kmsg

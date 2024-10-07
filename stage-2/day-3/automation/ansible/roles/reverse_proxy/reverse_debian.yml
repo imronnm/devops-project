@@ -1,0 +1,20 @@
+    # Create Nginx configuration file for Debian
+    - name: Create Nginx configuration file for Debian
+      ansible.builtin.copy:
+        dest: /etc/nginx/sites-available/default
+        content: |
+          server {
+              listen 80;
+              server_name debian.studentdumbways.my.id;
+
+              location / {
+                  proxy_pass http://35.240.172.88:9100;  
+              }
+          }
+      notify: Restart Nginx
+      
+      handlers:
+    - name: Restart Nginx
+      ansible.builtin.service:
+        name: nginx
+        state: restarted

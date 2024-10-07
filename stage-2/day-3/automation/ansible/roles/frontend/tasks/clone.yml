@@ -1,0 +1,4 @@
+- name: Clone the frontend repository
+  git:
+    repo: https://github.com/imronnm/frontend
+    dest: /home/ansible/frontend

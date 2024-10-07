@@ -1,0 +1,7 @@
+- name: Include Docker tasks for Debian
+  include_tasks: docker_debian.yml
+  when: ansible_distribution == "Debian"
+
+- name: Include Docker tasks for Ubuntu
+  include_tasks: docker_ubuntu.yml
+  when: ansible_distribution == "Ubuntu"

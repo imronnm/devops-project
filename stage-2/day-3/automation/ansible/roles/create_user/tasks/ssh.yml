@@ -1,0 +1,21 @@
+    - name: Create a new user with hashed password
+      ansible.builtin.user:
+        name: ansible  # Ganti dengan nama pengguna yang diinginkan
+        state: present
+        create_home: yes
+        password: "{{ vault_password }}"  # Menggunakan password yang sudah di-hash
+        shell: /bin/bash
+        groups: sudo
+
+    - name: Set authorized key for the new user
+      ansible.posix.authorized_key:
+        user: ansible  # Ganti dengan nama pengguna yang diinginkan
+        state: present
+        key: "{{ lookup('file', '/home/imron/.ssh/id_rsa.pub') }}"  # Ganti dengan kunci publik yang diinginkan
+        path: /home/ansible/.ssh/authorized_keys  # Jalur ke authorized_keys
+        manage_dir: true  # Ansible akan membuat direktori .ssh jika tidak ada
+
+    - name: Ensure SSH service is running
+      ansible.builtin.service:
+        name: ssh
+        state: started

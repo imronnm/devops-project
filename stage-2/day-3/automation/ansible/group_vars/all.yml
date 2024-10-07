@@ -1,0 +1,3 @@
+ansible_user: imron  # Nama pengguna SSH
+ansible_python_interpreter: /usr/bin/python3  # Interpreter Python yang digunakan
+vault_password: "$1$t0PZvfjk$NGrn2huLLEgIpbS/l3Vju0"  # Password yang sudah di-hash
