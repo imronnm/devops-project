@@ -119,3 +119,7 @@ sudo certbot --nginx -d domaingrafana.com
 ![tampilan-web](images/4.png) <br>
 
 ![tampilan-web](images/5.png) <br>
+
+![tampilan-web](images/6.png) <br>
+
+![tampilan-web](images/7.png) <br>
