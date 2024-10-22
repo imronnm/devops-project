@@ -3,38 +3,37 @@
 Repository ini berisi perjalanan pembelajaran dan implementasi project saya selama mengikuti DevOps Bootcamp Dumbways Batch 21. Kurikulum disusun dalam beberapa tahap, mencakup praktik DevOps dari tingkat dasar hingga lanjutan.
 
 ## Struktur Repository
+### [Stage 1: Dasar-Dasar DevOps & Linux](/stage-1)
+- [**Day 1**: Pengenalan DevOps, Dasar Linux, dan Instalasi Nginx](/stage-1/day-1)
+- [**Day 2**: Perintah Dasar Linux, Pengalamatan IP (Private vs Public, Dynamic vs Static)](/stage-1/day-2)
+- [**Day 3**: Manipulasi Teks, Editor Nano, Shell Scripting, dan Firewall Linux](/stage-1/day-3)
+- [**Day 4**: Dasar-dasar Git dan Alur Kerja](/stage-1/day-4)
+- [**Day 5**: Deployment Aplikasi (Go, Python) dan Microservices](/stage-1/day-5)
+- [**Day 6**: Web Server, Load Balancing, dan Reverse Proxy](/stage-1/day-6)
 
-### Stage 1: Dasar-Dasar DevOps & Linux
-- **Day 1**: Pengenalan DevOps, Dasar Linux, dan Instalasi Nginx
-- **Day 2**: Perintah Dasar Linux, Pengalamatan IP (Private vs Public, Dynamic vs Static)
-- **Day 3**: Manipulasi Teks, Editor Nano, Shell Scripting, dan Firewall Linux
-- **Day 4**: Dasar-dasar Git dan Alur Kerja
-- **Day 5**: Deployment Aplikasi (Go, Python) dan Microservices
-- **Day 6**: Web Server, Load Balancing, dan Reverse Proxy
+### [Stage 2: Praktik DevOps Tingkat Lanjut](/stage-2)
+#### [Minggu 1: Deployment Aplikasi](/stage-2/Week-1)
+- [Deployment Frontend](/stage-2/Week-1/deploy-frontend.md)
+- [Deployment Backend](/stage-2/Week-1/deploy-backend.md)
+- [Pengaturan Database MySQL](/stage-2/Week-1/deploy-mysql.md)
+- [Konfigurasi Web Server](/stage-2/Week-1/web-server.md)
 
-### Stage 2: Praktik DevOps Tingkat Lanjut
-#### Minggu 1: Deployment Aplikasi
-- Deployment Frontend
-- Deployment Backend
-- Pengaturan Database MySQL
-- Konfigurasi Web Server
+#### [Minggu 2: Kontainerisasi & CI/CD](/stage-2/Week-2)
+- [Implementasi Docker](/stage-2/Week-2/docker)
+- [GitLab Runner](/stage-2/Week-2/gitlabrunner)
+- [Konfigurasi Jenkins](/stage-2/Week-2/Jenkins)
 
-#### Minggu 2: Kontainerisasi & CI/CD
-- Implementasi Docker
-- GitLab Runner
-- Konfigurasi Jenkins
-
-#### Minggu 3: Infrastructure as Code & Monitoring
+#### [Minggu 3: Infrastructure as Code & Monitoring](/stage-2/Week-3)
 - **Otomatisasi**
-  - Implementasi Ansible
-  - Penyediaan Infrastruktur dengan Terraform
-- **Monitoring** setup dan konfigurasi
+  - [Implementasi Ansible](/stage-2/Week-3/automation/ansible)
+  - [Penyediaan Infrastruktur dengan Terraform](/stage-2/Week-3/automation/terraform)
+- [**Monitoring** setup dan konfigurasi](/stage-2/Week-3/monitoring)
 
-#### Minggu 4: Orkestrasi Kontainer
-- Clustering Docker Swarm
-- Implementasi Kubernetes (K3s)
+#### [Minggu 4: Orkestrasi Kontainer](/stage-2/Week-4)
+- [Clustering Docker Swarm](/stage-2/Week-4/docker-swarm)
+- [Implementasi Kubernetes (K3s)](/stage-2/Week-4/kubernetes)
 
-### Final Task Project
+### [Final Task Project](/final-task-project)
 Implementasi project menyeluruh yang mencakup:
 - Pipeline CI/CD
 - Strategi Deployment
