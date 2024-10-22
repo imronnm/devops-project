@@ -24,12 +24,12 @@ Repository ini berisi perjalanan pembelajaran dan implementasi project saya sela
 - [Konfigurasi Jenkins](/stage-2/Week-2/Jenkins)
 
 #### [Minggu 3: Infrastructure as Code & Monitoring](/stage-2/Week-3)
-- **Otomatisasi**
+- **Automation**
   - [Implementasi Ansible](/stage-2/Week-3/automation/ansible)
   - [Penyediaan Infrastruktur dengan Terraform](/stage-2/Week-3/automation/terraform)
 - [**Monitoring** setup dan konfigurasi](/stage-2/Week-3/monitoring)
 
-#### [Minggu 4: Orkestrasi Kontainer](/stage-2/Week-4)
+#### [Minggu 4: Container & Orchestration](/stage-2/Week-4)
 - [Clustering Docker Swarm](/stage-2/Week-4/docker-swarm)
 - [Implementasi Kubernetes (K3s)](/stage-2/Week-4/kubernetes)
 
@@ -51,14 +51,6 @@ Implementasi project menyeluruh yang mencakup:
 - Stage 2: ✅ Selesai
 - Final Task: ✅ Selesai
 
-## Struktur Direktori
-```
-├── final-task-project/
-├── stage-1/
-│   └── day-1 sampai day-6
-├── stage-2/
-│   └── Week-1 sampai Week-4
-```
 
 ## Teknologi yang Digunakan
 - Infrastruktur: Terraform, Ansible
