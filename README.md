@@ -36,16 +36,15 @@ Repository ini berisi perjalanan pembelajaran dan implementasi project saya sela
 
 ### [Final Task Project](/final-task-project)
 Implementasi project menyeluruh yang mencakup:
-- Pipeline CI/CD
-- Strategi Deployment
+- Pipeline CI/CD Jenkins
+- Deployment Docker compose
 - Docker Registry (Private)
-- Pengaturan Kubernetes
+- Kubernetes Cluster
 - Monitoring Infrastruktur
-- Penyediaan Server (Ansible & Terraform)
+- Automation (Ansible & Terraform)
 - Manajemen Repository
-- Konfigurasi Server
-- Implementasi Testing
-- Pengaturan Web Server
+- Implementasi Testing CI CD (Trivy, SonarQube, wget spider)
+- Implementasi Web Server
 
 ## Status Project
 - Stage 1: ✅ Selesai
@@ -57,11 +56,11 @@ Implementasi project menyeluruh yang mencakup:
 - Infrastruktur: Terraform, Ansible
 - Kontainerisasi: Docker, Kubernetes
 - CI/CD: Jenkins, GitLab Runner
-- Monitoring: Prometheus, Grafana
+- Monitoring: Prometheus, Grafana, Node Exporter, Cadvisor
 - Web Server: Nginx
 - Version Control: Git
-- Pemrograman: Go, Python
-- Database: MySQL
+- Pemrograman: Go, Javascript
+- Database: MySQL, PostgreSQL
 
 ## Dokumentasi
 Setiap direktori berisi dokumentasi terperinci dan langkah-langkah implementasi dalam file `readme.md` masing-masing, beserta gambar pendukung di direktori `assets` atau `images`.
