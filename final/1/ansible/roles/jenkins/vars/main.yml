@@ -1,0 +1,9 @@
+jenkins_image: "jenkins/jenkins"
+jenkins_tag: "lts"
+jenkins_container_name: "jenkins"
+jenkins_ports:
+  - "8080:8080"
+  - "50000:50000"
+jenkins_volume_name: "jenkins_home"
+jenkins_data_volume: "jenkins_home:/var/jenkins_home"
+jenkins_restart_policy: "always"

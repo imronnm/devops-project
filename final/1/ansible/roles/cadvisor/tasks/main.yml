@@ -1,0 +1,17 @@
+- name: Run cAdvisor container
+  docker_container:
+    name: "{{ cadvisor_container_name }}"
+    image: "{{ cadvisor_image }}"
+    ports: "{{ cadvisor_ports }}"
+    volumes: "{{ cadvisor_volumes }}"
+    state: started
+    restart_policy: "{{ cadvisor_restart_policy }}"
+
+- name: Ensure cAdvisor is running
+  docker_container_info:
+    name: "{{ cadvisor_container_name }}"
+  register: cadvisor_info
+
+- name: Debug cAdvisor container info
+  debug:
+    var: cadvisor_info

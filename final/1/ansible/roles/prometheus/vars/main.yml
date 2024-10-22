@@ -1,0 +1,4 @@
+
+prometheus_version: "latest"
+prometheus_port: 9090
+prometheus_external_url: "http://localhost:9090"

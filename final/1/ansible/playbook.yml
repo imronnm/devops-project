@@ -1,0 +1,12 @@
+- hosts: all
+  become: true
+  roles:
+    - cadvisor
+    - certbot
+    - docker
+    - grafana
+    - jenkins
+    - nginx
+    - node_exporter
+    - sonarqube
+    - prometheus

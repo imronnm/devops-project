@@ -1,0 +1,19 @@
+- name: Update apt package index
+  apt:
+    update_cache: yes
+
+- name: Install NGINX
+  apt:
+    name: "{{ nginx_package }}"
+    state: present
+
+- name: Start and enable NGINX service
+  systemd:
+    name: "{{ nginx_service }}"
+    state: started
+    enabled: yes
+
+- name: Ensure NGINX is running
+  systemd:
+    name: "{{ nginx_service }}"
+    state: started

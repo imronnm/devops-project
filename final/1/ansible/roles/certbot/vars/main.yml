@@ -1,0 +1,4 @@
+cloudflare_email: "iyaron08@gmail.com"
+cloudflare_api_key: "38dad959d491aaaf06240a6820c0e6e822132"
+domain: "*.imron.studentdumbways.my.id"
+certbot_path: "/etc/letsencrypt/live/imron.studentdumbways.my.id"

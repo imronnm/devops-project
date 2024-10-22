@@ -1,0 +1,49 @@
+- name: Update APT package list
+  apt:
+    update_cache: yes
+
+- name: Install necessary packages for Certbot and Cloudflare DNS Plugin
+  apt:
+    name:
+      - certbot
+      - python3-certbot-dns-cloudflare
+    state: present
+
+- name: Create Cloudflare credentials file for Certbot
+  copy:
+    dest: /etc/letsencrypt/cloudflare.ini
+    content: |
+      dns_cloudflare_email = {{ cloudflare_email }}
+      dns_cloudflare_api_key = {{ cloudflare_api_key }}
+    owner: root
+    group: root
+    mode: 0600
+
+- name: Obtain SSL certificate for wildcard domain
+  command: >
+    certbot certonly
+    --dns-cloudflare
+    --dns-cloudflare-credentials /etc/letsencrypt/cloudflare.ini
+    -d {{ domain }}
+    -d imron.studentdumbways.my.id
+    --non-interactive
+    --agree-tos
+    --email {{ cloudflare_email }}
+  register: certbot_output
+  retries: 5
+  delay: 10
+  until: certbot_output.rc == 0
+
+- name: Print Certbot Output
+  debug:
+    var: certbot_output.stdout
+
+- name: Ensure the certificates are present
+  stat:
+    path: "{{ certbot_path }}/fullchain.pem"
+  register: cert
+
+- name: Display message if certificate exists
+  debug:
+    msg: "Certificate successfully created and located at {{ certbot_path }}"
+  when: cert.stat.exists

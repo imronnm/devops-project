@@ -1,0 +1,21 @@
+- name: Install Docker Compose if not present
+  apt:
+    name: docker-compose
+    state: present
+  become: true
+
+- name: Create directory for Grafana Docker Compose
+  file:
+    path: /opt/grafana
+    state: directory
+
+- name: Copy Docker Compose file for Grafana
+  template:
+    src: docker-compose.yml.j2
+    dest: /opt/grafana/docker-compose.yml
+
+- name: Start Grafana service using Docker Compose
+  command: docker-compose up -d
+  args:
+    chdir: /opt/grafana
+  become: true

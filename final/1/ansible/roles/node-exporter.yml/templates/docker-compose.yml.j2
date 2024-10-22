@@ -1,0 +1,13 @@
+services:
+  node_exporter:
+    image: prom/node-exporter:{{ node_exporter_version }}
+    ports:
+      - "{{ node_exporter_port }}:9100"
+    restart: always
+    command:
+      - '--path.procfs=/proc'
+      - '--path.sysfs=/sys'
+      - '--collector.filesystem.ignored-mount-points="^/(sys|proc|dev|host|etc)($$|/)"'
+
+volumes:
+  node_exporter_data:

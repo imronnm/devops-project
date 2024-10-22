@@ -1,0 +1,20 @@
+---
+- name: Pull Jenkins Docker image
+  docker_image:
+    name: "{{ jenkins_image }}"
+    tag: "{{ jenkins_tag }}"
+    source: pull
+
+- name: Create a volume for Jenkins data
+  docker_volume:
+    name: "{{ jenkins_volume_name }}"
+
+- name: Run Jenkins container
+  docker_container:
+    name: "{{ jenkins_container_name }}"
+    image: "{{ jenkins_image }}:{{ jenkins_tag }}"
+    state: started
+    restart_policy: "{{ jenkins_restart_policy }}"
+    ports: "{{ jenkins_ports }}"
+    volumes:
+      - "{{ jenkins_data_volume }}"

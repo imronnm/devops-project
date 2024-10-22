@@ -1,0 +1,22 @@
+---
+- name: Install Docker Compose if not present
+  apt:
+    name: docker-compose
+    state: present
+  become: true
+
+- name: Create directory for Node Exporter Docker Compose
+  file:
+    path: /opt/node_exporter
+    state: directory
+
+- name: Copy Docker Compose file for Node Exporter
+  template:
+    src: docker-compose.yml.j2
+    dest: /opt/node_exporter/docker-compose.yml
+
+- name: Start Node Exporter service using Docker Compose
+  command: docker-compose up -d
+  args:
+    chdir: /opt/node_exporter
+  become: true

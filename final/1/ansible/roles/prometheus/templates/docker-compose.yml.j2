@@ -1,0 +1,12 @@
+services:
+  prometheus:
+    image: prom/prometheus:{{ prometheus_version }}
+    ports:
+      - "{{ prometheus_port }}:9090"
+    volumes:
+      - prometheus_data:/prometheus
+    environment:
+      - PROMETHEUS_WEB_EXTERNAL_URL={{ prometheus_external_url }}
+
+volumes:
+  prometheus_data:

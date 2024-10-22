@@ -1,0 +1,8 @@
+# Sesuaikan variabel sesuai kebutuhan
+sonarqube_version: "latest"
+sonarqube_port: 9000
+sonarqube_db_host: "localhost"
+sonarqube_db_port: 5432
+sonarqube_db_name: "sonarqube"
+sonarqube_db_user: "sonar"
+sonarqube_db_password: "sonar_password"
