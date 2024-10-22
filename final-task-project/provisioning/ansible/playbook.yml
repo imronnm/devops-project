@@ -1,4 +1,4 @@
-- hosts: all
+- hosts: k3s_master
   become: true
   roles:
     - cadvisor

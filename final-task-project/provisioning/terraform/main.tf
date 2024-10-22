@@ -36,7 +36,7 @@ resource "google_compute_firewall" "allow_appserver" {
 
   allow {
     protocol = "tcp"
-    ports    = ["3000", "5000", "3306"]
+    ports    = ["3000", "5000", "5423"]
   }
 
   source_ranges = ["0.0.0.0/0"]
