@@ -1,5 +1,5 @@
-# DumbWays DevOps Bootcamp - Stage 1
-Repository ini berisi dokumentasi pembelajaran saya selama mengikuti bootcamp DevOps di DumbWays batch 21.
+# DevOps Project - Stage 1
+Repository ini berisi dokumentasi pembelajaran saya Belajar DevOps.
 
 ## Table of Contents
 
