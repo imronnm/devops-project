@@ -1,6 +1,6 @@
-# DumbWays DevOps Stage 2
+# DevOps Stage 2
 
-Repository ini berisi dokumentasi pembelajaran DevOps di DumbWays pada Stage 2, mencakup materi tentang Docker, CI/CD, Automation, Monitoring, dan Orchestration.
+Repository ini berisi dokumentasi pembelajaran Belajar Devops Stage 2, mencakup materi tentang Docker, CI/CD, Automation, Monitoring, dan Orchestration.
 
 ## Table of Contents
 
