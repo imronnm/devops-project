@@ -1,6 +1,6 @@
-# DevOps Bootcamp Dumbways - Batch 21
+# DevOps Project
 
-Repository ini berisi perjalanan pembelajaran dan implementasi project saya selama mengikuti DevOps Bootcamp Dumbways Batch 21. Kurikulum disusun dalam beberapa tahap, mencakup praktik DevOps dari tingkat dasar hingga lanjutan.
+Repository ini berisi perjalanan pembelajaran dan implementasi project saya selama Belajar DevOps. Kurikulum disusun dalam beberapa tahap, mencakup praktik DevOps dari tingkat dasar hingga lanjutan.
 
 ## Struktur Repository
 ### [Stage 1: Dasar-Dasar DevOps & Linux](/stage-1)
@@ -54,6 +54,7 @@ Implementasi project menyeluruh yang mencakup:
 
 ## Teknologi yang Digunakan
 - Infrastruktur: Terraform, Ansible
+- Cloud : Goggle Cloud Platform (GCP)
 - Kontainerisasi: Docker, Kubernetes
 - CI/CD: Jenkins, GitLab Runner
 - Monitoring: Prometheus, Grafana, Node Exporter, Cadvisor
