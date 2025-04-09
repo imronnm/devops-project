@@ -63,5 +63,4 @@ Implementasi project menyeluruh yang mencakup:
 - Pemrograman: Go, Javascript
 - Database: MySQL, PostgreSQL
 
-## Dokumentasi
-Setiap direktori berisi dokumentasi terperinci dan langkah-langkah implementasi dalam file `readme.md` masing-masing, beserta gambar pendukung di direktori `assets` atau `images`.
+[Alt Text](./image)
