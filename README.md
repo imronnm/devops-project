@@ -63,4 +63,4 @@ Implementasi project menyeluruh yang mencakup:
 - Pemrograman: Go, Javascript
 - Database: MySQL, PostgreSQL
 
-(./images.png)
+![alt](images.png)
